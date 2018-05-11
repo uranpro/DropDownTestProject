@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F7551A3F3E53FC46E92456A /* libPods-DropDownTestProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F01B143CA47D2171330DC21C /* libPods-DropDownTestProject.a */; };
 		E134858220A51F6800C44A52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E134858120A51F6800C44A52 /* AppDelegate.swift */; };
 		E134858420A51F6800C44A52 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E134858320A51F6800C44A52 /* LoginViewController.swift */; };
 		E134858920A51F6900C44A52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E134858820A51F6900C44A52 /* Assets.xcassets */; };
@@ -20,9 +21,11 @@
 		E13485A620A5261000C44A52 /* ActionSheetPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13485A220A5261000C44A52 /* ActionSheetPickerViewController.swift */; };
 		E13485A720A5261000C44A52 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13485A320A5261000C44A52 /* PickerViewController.swift */; };
 		E13485A920A5263900C44A52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E13485A820A5263900C44A52 /* Main.storyboard */; };
+		E13485AC20A533FD00C44A52 /* DropDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13485AB20A533FD00C44A52 /* DropDown.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B2616E0C19509BC08CD4344F /* Pods-DropDownTestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropDownTestProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DropDownTestProject/Pods-DropDownTestProject.debug.xcconfig"; sourceTree = "<group>"; };
 		E134857E20A51F6800C44A52 /* DropDownTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropDownTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E134858120A51F6800C44A52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E134858320A51F6800C44A52 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +41,9 @@
 		E13485A220A5261000C44A52 /* ActionSheetPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetPickerViewController.swift; sourceTree = "<group>"; };
 		E13485A320A5261000C44A52 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		E13485A820A5263900C44A52 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E13485AB20A533FD00C44A52 /* DropDown.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropDown.framework; path = Carthage/Build/iOS/DropDown.framework; sourceTree = "<group>"; };
+		E3BB6E3A7EA168D32288AAE5 /* Pods-DropDownTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropDownTestProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-DropDownTestProject/Pods-DropDownTestProject.release.xcconfig"; sourceTree = "<group>"; };
+		F01B143CA47D2171330DC21C /* libPods-DropDownTestProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DropDownTestProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,21 +51,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E13485AC20A533FD00C44A52 /* DropDown.framework in Frameworks */,
 				E134859920A5253F00C44A52 /* RxCocoa.framework in Frameworks */,
 				E134859A20A5253F00C44A52 /* CoreActionSheetPicker.framework in Frameworks */,
 				E134859B20A5253F00C44A52 /* RxSwift.framework in Frameworks */,
+				9F7551A3F3E53FC46E92456A /* libPods-DropDownTestProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B40D0259C53D1E58E2D93695 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2616E0C19509BC08CD4344F /* Pods-DropDownTestProject.debug.xcconfig */,
+				E3BB6E3A7EA168D32288AAE5 /* Pods-DropDownTestProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E134857520A51F6800C44A52 = {
 			isa = PBXGroup;
 			children = (
 				E134858020A51F6800C44A52 /* DropDownTestProject */,
 				E134857F20A51F6800C44A52 /* Products */,
 				E134859520A5253F00C44A52 /* Frameworks */,
+				B40D0259C53D1E58E2D93695 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +92,7 @@
 		E134858020A51F6800C44A52 /* DropDownTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				E13485AA20A52DDE00C44A52 /* Resources */,
 				E134859D20A525B900C44A52 /* Utils */,
 				E134859320A51F7300C44A52 /* Controller */,
 				E134858120A51F6800C44A52 /* AppDelegate.swift */,
@@ -108,9 +127,11 @@
 		E134859520A5253F00C44A52 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E13485AB20A533FD00C44A52 /* DropDown.framework */,
 				E134859720A5253F00C44A52 /* CoreActionSheetPicker.framework */,
 				E134859620A5253F00C44A52 /* RxCocoa.framework */,
 				E134859820A5253F00C44A52 /* RxSwift.framework */,
+				F01B143CA47D2171330DC21C /* libPods-DropDownTestProject.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -123,6 +144,13 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		E13485AA20A52DDE00C44A52 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -130,6 +158,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E134859020A51F6900C44A52 /* Build configuration list for PBXNativeTarget "DropDownTestProject" */;
 			buildPhases = (
+				794BD42D81346080EE1D5221 /* [CP] Check Pods Manifest.lock */,
 				E134857A20A51F6800C44A52 /* Sources */,
 				E134857B20A51F6800C44A52 /* Frameworks */,
 				E134857C20A51F6800C44A52 /* Resources */,
@@ -191,6 +220,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		794BD42D81346080EE1D5221 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DropDownTestProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E134859C20A5254600C44A52 /* carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -200,6 +247,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/CoreActionSheetPicker.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/DropDown.framework",
 			);
 			name = carthage;
 			outputPaths = (
@@ -355,6 +403,7 @@
 		};
 		E134859120A51F6900C44A52 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2616E0C19509BC08CD4344F /* Pods-DropDownTestProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -377,6 +426,7 @@
 		};
 		E134859220A51F6900C44A52 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3BB6E3A7EA168D32288AAE5 /* Pods-DropDownTestProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
