@@ -22,6 +22,8 @@
 		E13485A720A5261000C44A52 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13485A320A5261000C44A52 /* PickerViewController.swift */; };
 		E13485A920A5263900C44A52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E13485A820A5263900C44A52 /* Main.storyboard */; };
 		E13485AC20A533FD00C44A52 /* DropDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13485AB20A533FD00C44A52 /* DropDown.framework */; };
+		E18EBA2820A5EC3F00553D7C /* DropDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18EBA2720A5EC3F00553D7C /* DropDownButton.swift */; };
+		E18EBA2A20A5F4AB00553D7C /* CustomDDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18EBA2920A5F4AB00553D7C /* CustomDDViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		E13485A320A5261000C44A52 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		E13485A820A5263900C44A52 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E13485AB20A533FD00C44A52 /* DropDown.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropDown.framework; path = Carthage/Build/iOS/DropDown.framework; sourceTree = "<group>"; };
+		E18EBA2720A5EC3F00553D7C /* DropDownButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownButton.swift; sourceTree = "<group>"; };
+		E18EBA2920A5F4AB00553D7C /* CustomDDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDDViewController.swift; sourceTree = "<group>"; };
 		E3BB6E3A7EA168D32288AAE5 /* Pods-DropDownTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropDownTestProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-DropDownTestProject/Pods-DropDownTestProject.release.xcconfig"; sourceTree = "<group>"; };
 		F01B143CA47D2171330DC21C /* libPods-DropDownTestProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DropDownTestProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -92,6 +96,7 @@
 		E134858020A51F6800C44A52 /* DropDownTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				E18EBA2620A5EC3400553D7C /* View */,
 				E13485AA20A52DDE00C44A52 /* Resources */,
 				E134859D20A525B900C44A52 /* Utils */,
 				E134859320A51F7300C44A52 /* Controller */,
@@ -120,6 +125,7 @@
 				E13485A120A5261000C44A52 /* ActionSheetViewController.swift */,
 				E13485A020A5261000C44A52 /* DropDownViewController.swift */,
 				E13485A320A5261000C44A52 /* PickerViewController.swift */,
+				E18EBA2920A5F4AB00553D7C /* CustomDDViewController.swift */,
 			);
 			path = Picker;
 			sourceTree = "<group>";
@@ -149,6 +155,14 @@
 			children = (
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		E18EBA2620A5EC3400553D7C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E18EBA2720A5EC3F00553D7C /* DropDownButton.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E18EBA2820A5EC3F00553D7C /* DropDownButton.swift in Sources */,
 				E13485A620A5261000C44A52 /* ActionSheetPickerViewController.swift in Sources */,
 				E13485A520A5261000C44A52 /* ActionSheetViewController.swift in Sources */,
 				E134859F20A525E400C44A52 /* RXKeyboardHeight.swift in Sources */,
@@ -270,6 +285,7 @@
 				E134858220A51F6800C44A52 /* AppDelegate.swift in Sources */,
 				E13485A720A5261000C44A52 /* PickerViewController.swift in Sources */,
 				E13485A420A5261000C44A52 /* DropDownViewController.swift in Sources */,
+				E18EBA2A20A5F4AB00553D7C /* CustomDDViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
